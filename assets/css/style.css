@@ -1,0 +1,564 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/*comon*/
+
+.clear{
+    clear:both;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.text-gray{
+    color: #757575 !important;
+}
+
+.width-full{
+    width: 100%; 
+}
+
+.width-hafl{
+    width: 50%;
+}
+
+.width-third{
+    width: 33.33333%;
+}
+
+.row {
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.row::after{
+    content: "";
+    display: block;
+    clear:both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.side-right{
+    float: right !important;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px;
+}
+
+.btn{
+    margin-bottom: 16px;
+    background-color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    display:inline-block;
+    color: #fff;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+
+/*main*/
+html{
+    font-family: "Lato", sans-serif;
+}
+
+#main{
+    font-weight: 2px;
+}
+
+#header{
+    background-color: #000;
+    width: 100%;
+    height: 46px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    cursor:alias;
+    
+}
+
+#nav{
+    display: inline-block;
+}
+
+#nav .subnav{
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+    
+}
+
+#nav li{
+    
+    position: relative;
+    
+}
+
+#nav > li > a{
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+}
+
+#nav .subnav a:hover,
+#nav >li:hover >a{
+    background-color: #d3d3d3;
+    color: #000;
+    cursor: pointer;
+}
+
+#nav li a{
+    display: block;
+    line-height: 46px;
+    padding: 0 24px;
+    text-decoration: none;
+    
+}
+
+.ti-angle-down{
+    font-size: 10px;
+}
+
+#nav li:hover .subnav{
+    display: block;
+    cursor: pointer;
+}
+
+#nav .subnav{
+    width: 150px;
+    position: absolute;
+    background-color: #fff;
+    display: none;
+    box-shadow:  4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+#nav .subnav a{
+    color: #000;
+    display: block;
+    width: 100%;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#header .menu-mobile-btn,
+#header .search-brt{
+    Float: right;
+    line-height: 46px;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    position: absolute
+}
+
+#header .search-brt:hover{
+    background-color: #f44336;
+}
+
+#header .menu-mobile-btn:hover{
+    background-color: #ccc;
+}
+
+#header .menu-mobile-btn:hover .menu-icon{
+    color:#000;
+}
+
+#header .menu-icon,
+#header .search-icon{
+    color: #fff;
+    font-size: 14px;
+    padding: 0 24px;
+}
+
+#Slider{
+    
+   
+    margin-top: 46px;
+    position: relative;
+}
+
+#Slider .test-content{
+    color:#fff;
+    position: absolute;
+    bottom: 32px;
+    text-align: center;
+    padding: 16px 32px;
+    width: 100%;
+}
+
+#Slider .test-heading{
+    font-size: 24px;
+    font-weight: 400;
+    
+}
+
+#Slider .heading-sub{
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 25px;
+}
+
+
+
+
+#Content{
+
+}
+
+
+#Content .content-sections{
+    
+    padding: 64px 16px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 24px;
+}
+
+#Content .content-heading,
+#Content .content-sub-heading{
+    text-align: center;
+}
+
+#Content .content-heading{
+    letter-spacing: 4px;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#Content .content-sub-heading{
+    margin-top: 17px;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#Content .about-heading{
+    margin-top: 15px;
+    text-align: justify;
+    font-weight: 1.6;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+#Content .member-list{
+    margin-top: 48px;
+    margin-bottom: 32px;
+} 
+
+
+#Content .member-name{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+#Content .member-avt{
+    width: 60%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.tour-section{
+    background-color: #000;
+}
+
+.ticket{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.ticket li{
+    padding: 11px 16px;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ticket .sold-out{
+    background-color: #f44336;
+    padding: 2px 8px;
+    margin-left: 16px;
+    color: #fff;
+}
+
+.ticket .quality{
+    float: right;
+    background-color: #000;
+    margin-right: 16px;
+    padding: 2px 8px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.places-list{
+    padding: 32px 8px;
+}
+
+.places-item{
+    float: left;
+    width: 33.33333%;
+    padding: 0 8px;
+   
+}
+
+.places-img{
+    width: 100%;
+    display: block;
+}
+
+.places-img:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.places-body{
+    background-color: #fff;
+    font-size: 15px;
+    padding: 0 16px;
+    font-style: "Lato", sans-serif;
+}
+
+.places-heading{
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.places-time{
+    margin-top: 15px;
+    opacity: 0.6;
+}
+
+.places-hesc{
+    margin: 15px 0;
+    font-weight: 300;
+}
+
+.modal{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    display: none;
+}
+
+.modal.open{
+    display:flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    position: relative;
+    width:900px;
+    animation: modalFadeIn ease 0.5s;
+    max-width: calc(100% - 32px);
+}
+.modal .modal-close {
+    background-color: #009688;    
+}
+
+
+.ti-close:hover {
+    background-color: #757575;
+    color: #000;
+    cursor: pointer;
+}
+
+.ti-bag{
+    margin-right: 16px;
+}
+
+.modal .ti-close{
+    right: 0;
+    top: 0;
+    position: absolute;
+    padding: 16px 16px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.modal .modal-header {
+    background-color: #009688;
+    font-size: 30px;
+    height: 139px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+.modal .modal-body {
+    margin: 0 16px;
+    
+}
+
+.modal .modal-label {
+    
+}
+
+.modal-all-label{
+    display:block;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+
+.modal .modal-input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+.modal .modal-label {
+
+}
+
+.modal .modal-input {
+
+}
+
+.modal .modal-footer {
+
+}
+
+.modal .modal-help {
+    margin: 21px 16px;
+    font-size: 15px;
+    float: right;
+}
+
+#buy-tickets{
+    background-color: #009688;
+    width: 100%;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    margin: 16px 0;
+    padding: 16px;
+}
+
+#buy-tickets:hover{
+    background-color: #757575;
+    color: #000;
+    cursor: pointer;
+}
+
+#help-color{
+    color: #2196F3;
+}
+
+@keyframes modalFadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.contact-content{
+    padding: 47px 0;
+    margin-right: -8px;
+    padding-bottom: 0;
+}
+
+.content-sections .form-control{
+
+}
+
+.contact-info{
+    font-weight: 550;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+.contact-info i[class*="ti-"]{
+    width: 34px;
+    display: inline-block;
+}
+
+.content-sections .form-control{
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.contact-content .form-submit{
+    padding: 8px 16px;
+    margin-right: -8px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.contact-content .form-submit:hover{
+    background-color: #757575;
+    color:#fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.footer{
+    text-align: center;
+    padding: 64px 16px;
+}
+
+.icon-footer{
+    font-size: 25px;
+    color: #696969;
+    text-decoration: none;
+}
+
+.icon-footer:hover {
+    color:rgba(0, 0, 0, 0.4);
+}
+
+.PhanKao{
+    color: #696969;
+}
+
+.powerd{
+    font-size: 15px;
+    color: #696969;
+}
+.send-btn{
+    margin-right: -8px;
+}
+
+
